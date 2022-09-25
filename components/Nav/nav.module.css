@@ -1,0 +1,31 @@
+.nav {
+  background-color: #222222;
+  display: flex;
+  justify-content: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.logo {
+  height: 21px;
+  width: 143.5px;
+}
+
+@media (min-width: 768px) {
+  .nav {
+    justify-content: left;
+  }
+}
+@media (min-width: 1024px) {
+  .nav {
+    justify-content: left;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .logo {
+    height: 29px;
+    width: 184.5px;
+  }
+}
+@media (min-width: 1440px) {
+}

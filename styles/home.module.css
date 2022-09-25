@@ -1,0 +1,92 @@
+.banner {
+  display: flex;
+  justify-content: end;
+  flex-direction: column;
+  background-position: top;
+  background-size: cover;
+  background-image: url("/photo-couch.jpeg");
+  color: #fff;
+}
+.bannerContent {
+  padding: 4rem 0;
+}
+
+@media (min-width: 320px) {
+}
+@media (min-width: 500px) {
+}
+@media (min-width: 500px) {
+}
+@media (min-width: 768px) {
+}
+@media (min-width: 1024px) {
+  .bannerContent {
+    padding: 9rem 0 3rem;
+  }
+}
+@media (min-width: 1280px) {
+}
+@media (min-width: 1440px) {
+}
+
+.callouts {
+  background-color: #f2f1ef;
+  color: #2f3237;
+  padding: 34px 0;
+  text-align: center;
+}
+.callout {
+  width: 25%;
+}
+.steps {
+  display: flex;
+}
+.step {
+  width: 25%;
+  padding: 0 8px;
+}
+.stepH1 {
+  font-weight: 500;
+  display: inline-block;
+  padding-bottom: 10px;
+  border-bottom: 3px #51e3c2 solid;
+}
+.stepH2 {
+  margin-bottom: 16px;
+  color: #2f3237;
+}
+.stepBody {
+  max-width: 224px;
+  margin: auto;
+}
+.stepLead {
+  margin-top: 8px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+@media (min-width: 320px) and (max-width: 500px) {
+}
+@media (min-width: 320px) and (max-width: 1024px) {
+  .steps {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .step {
+    margin-bottom: 28px;
+    box-sizing: border-box;
+    width: 50%;
+    padding: 0 8px;
+  }
+}
+@media (min-width: 500px) {
+}
+@media (min-width: 500px) and (max-width: 768px) {
+}
+@media (min-width: 768px) {
+}
+@media (min-width: 1024px) {
+}
+@media (min-width: 1280px) {
+}
+@media (min-width: 1440px) {
+}
