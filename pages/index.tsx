@@ -4,7 +4,7 @@ import type { NextPage } from 'next'
 import { GetServerSideProps } from 'next'
 import Nav from '../components/Nav/Nav.js'
 import styles from '../styles/home.module.css'
-import Button from '../components/Button/Button.js'
+import Banner from '../components/Banner/Banner.js'
 import Container from '../components/Container/Container.js'
 import {
   ApiCallout,
@@ -12,26 +12,6 @@ import {
   uiCallouts,
   apiUrl,
 } from '../lib/callouts'
-
-const BannerSection = () => {
-  return (
-    <section className={styles.banner}>
-      <Container>
-        <div className={styles.bannerContent}>
-          <h3>New Games and Accessories</h3>
-          <div className="sy1">
-            <h1>Monthly packages.</h1>
-            <h1>Excitement delivered daily.</h1>
-          </div>
-          <p style={{maxWidth: '450px'}}>What's the best way to shop for the latest video games and peripherals? How about never shopping at all? You'll get new stuff on your doorstep &mdash; every month.</p>
-          <div className="sy1">
-            <Button type="button">get started</Button>
-          </div>
-        </div>
-      </Container>
-    </section>
-  );
-};
 
 const CalloutsSection: React.FC<{ callouts: Array<Callout> }> = ({ callouts }) => {
   return (
@@ -69,7 +49,7 @@ const Home: NextPage<{callouts: Array<Callout>}> = ({ callouts }) => {
       </Head>
       <Nav />
       <main>
-        <BannerSection />
+        <Banner />
         <CalloutsSection callouts={callouts} />
       </main>
     </>

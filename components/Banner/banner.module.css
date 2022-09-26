@@ -1,0 +1,60 @@
+.banner {
+  display: flex;
+  justify-content: end;
+  flex-direction: column;
+  background-position: top;
+  background-size: cover;
+  background-image: url("/photo-couch.jpeg");
+  color: #fff;
+}
+
+.tagline {
+  max-width: 450px;
+}
+
+@media (320px <= width <= 1024px) and (orientation: portrait) {
+  .banner {
+    padding: 144px 0 32px;
+  }
+}
+@media (320px <= width <= 1024px) and (orientation: landscape) {
+  .banner {
+    padding: 36px 0 32px;
+  }
+}
+@media (1024px <= width <= 1440px) and (orientation: landscape) {
+  .banner {
+    padding: 180px 0 32px;
+  }
+}
+@media (1024px <= width <= 1440px) and (orientation: portrait) {
+  .banner {
+    padding: 180px 0 32px;
+  }
+}
+@media (1024px <= width <= 1440px) and (orientation: portrait) {
+  .banner {
+    padding: 180px 0 32px;
+  }
+}
+@media (min-width: 1920px) {
+  .tagline {
+    max-width: 800px;
+  }
+  .banner {
+    padding: 297px 0 63px;
+  }
+}
+@media (min-width: 2560px) {
+  .tagline {
+    max-width: 750px;
+  }
+  .banner {
+    padding: 396px 0 96px;
+  }
+}
+@media (min-width: 3840px) {
+  .banner {
+    padding: 720px 0 128px;
+  }
+}

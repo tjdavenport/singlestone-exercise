@@ -3,7 +3,7 @@
   text-transform: uppercase;
   background-color: #50e3c2;
   font-size: 1.5rem;
-  padding: 10px 32px;
+  padding: 1rem 3rem;
   border-radius: 99px;
   border: none;
   color: #2f3237;
@@ -16,19 +16,4 @@
 }
 .btn:active {
   background-color: #20c5a2;
-}
-
-@media (min-width: 320px) and (max-width: 500px) {
-}
-@media (min-width: 500px) {
-}
-@media (min-width: 500px) {
-}
-@media (min-width: 768px) {
-}
-@media (min-width: 1024px) {
-}
-@media (min-width: 1280px) {
-}
-@media (min-width: 1440px) {
 }

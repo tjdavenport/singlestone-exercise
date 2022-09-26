@@ -1,8 +1,10 @@
 .container {
-  padding: 0 2rem;
 }
 
-@media (min-width: 1024px) {
+@media (320px <= width <= 1280px) {
+  .container {
+    padding: 0 16px;
+  }
 }
 @media (min-width: 1280px) {
   .container {
@@ -14,5 +16,19 @@
   .container {
     margin: 0 auto;
     width: 1280px;
+  }
+}
+
+@media (min-width: 2560px) {
+  .container {
+    margin: 0 auto;
+    width: 1920px;
+  }
+}
+
+@media (min-width: 3840px) {
+  .container {
+    margin: 0 auto;
+    width: 2560px;
   }
 }
