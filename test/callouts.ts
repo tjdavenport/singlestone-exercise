@@ -6,6 +6,6 @@ import { uiCallouts } from '../lib/callouts'
 test('creates uiCallouts from ApiCallouts', () => {
   const callouts = uiCallouts(fixture)
   assert(callouts.length === 4)
-  assert(callouts[2].title === fixture[2].versionContent[2].title)
+  assert(callouts[2].title === fixture[2].versionContent[1].title)
 });
 

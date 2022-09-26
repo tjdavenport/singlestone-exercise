@@ -14,11 +14,11 @@ export type ApiCallout = {
 
 export const uiCallouts = (callouts: Array<ApiCallout>): Array<Callout> => {
   const essentials = [ ...callouts ] // prevent mutation
-    .sort(({ stepNumber: a }, { stepNumber: b }) => parseInt(a) - parseInt(b))
+    .sort(({ stepNumber: a }, { stepNumber: b }) => parseInt(a) > parseInt(b) ? 1 : -1)
     .map(callout => {
       const [ mostRecent ] = [ ...callout.versionContent ]
         .sort(({ effectiveDate: a }, { effectiveDate: b }) => {
-          return Date.parse(a) > Date.parse(b) ? 1 : -1
+          return Date.parse(a) < Date.parse(b) ? 1 : -1
         })
       return mostRecent
     })
