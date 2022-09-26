@@ -17,7 +17,7 @@ You can start editing the page by modifying `pages/index.tsx`. The page auto-upd
 
 ## Running Tests
 
-Node's built-in test runner is used.
+Node's [built-in test runner](https://nodejs.org/api/test.html) is used.
 
 ```
 npm run test
