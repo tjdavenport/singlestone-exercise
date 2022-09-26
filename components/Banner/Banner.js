@@ -12,7 +12,7 @@ export default function Banner() {
             <h1>Monthly packages.</h1>
             <h1>Excitement delivered daily.</h1>
           </div>
-          <p className={styles.tagline}>What's the best way to shop for the latest video games and peripherals? How about never shopping at all? You'll get new stuff on your doorstep &mdash; every month.</p>
+          <p className={styles.tagline}>What&apos;s the best way to shop for the latest video games and peripherals? How about never shopping at all? You&apos;ll get new stuff on your doorstep &mdash; every month.</p>
           <div className="sy1">
             <Button type="button">get started</Button>
           </div>

@@ -21,7 +21,7 @@ const CalloutsSection: React.FC<{ callouts: Array<Callout> }> = ({ callouts }) =
         <div className={styles.steps}>
           {callouts.map((callout, index) => {
             return (
-              <div className={styles.step}>
+              <div key={'callout-' + index} className={styles.step}>
                 <h1 className={styles.stepH1}>
                   {`0${index + 1}`}
                 </h1>
