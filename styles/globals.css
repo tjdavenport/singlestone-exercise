@@ -1,3 +1,9 @@
+/**
+ * @TODO - improve media queries
+ * @TODO - PSD uses pt units for font sizes. 
+ * Do more research into pt vs px
+ */
+
 @import './reset.css';
 
 html {
