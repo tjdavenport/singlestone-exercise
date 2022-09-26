@@ -18,14 +18,18 @@
     width: 1280px;
   }
 }
-
+@media (min-width: 1920px) {
+  .container {
+    margin: 0 auto;
+    width: 1440px;
+  }
+}
 @media (min-width: 2560px) {
   .container {
     margin: 0 auto;
     width: 1920px;
   }
 }
-
 @media (min-width: 3840px) {
   .container {
     margin: 0 auto;

@@ -4,11 +4,9 @@
   padding: 34px 0;
   text-align: center;
 }
-.callout {
-  width: 25%;
-}
 .steps {
   display: flex;
+  justify-content: space-between;
 }
 .step {
   width: 25%;
@@ -21,7 +19,8 @@
   border-bottom: 3px #51e3c2 solid;
 }
 .stepH2 {
-  margin-bottom: 16px;
+  margin-top: 16px;
+  margin-bottom: 24px;
   color: #2f3237;
 }
 .stepBody {
