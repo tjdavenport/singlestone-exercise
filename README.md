@@ -19,15 +19,18 @@ You can start editing the page by modifying `pages/index.tsx`. The page auto-upd
 
 Node's [built-in test runner](https://nodejs.org/api/test.html) is used.
 
-```
+```bash
 npm run test
 ```
 
 ## Deployment & Builds
 
-The live demo is built and deployed on Vercel. Though it is possible to use Next.js to [create static exports](https://nextjs.org/docs/advanced-features/static-html-export), the how-it-works data is fetched and rendered on the server side for faster page loads.
+The live demo is built and deployed on Vercel. A static export can be created
 
-## Learn More
+```
+npm run build
+npx next export
+```
 
 To learn more about Next.js, take a look at the following resources:
 

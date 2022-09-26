@@ -1,7 +1,7 @@
 import React from 'react'
 import Head from 'next/head'
 import type { NextPage } from 'next'
-import { GetServerSideProps } from 'next'
+import { GetStaticProps } from 'next'
 import Nav from '../components/Nav/Nav.js'
 import styles from '../styles/home.module.css'
 import Banner from '../components/Banner/Banner.js'
@@ -60,7 +60,7 @@ const Home: NextPage<{callouts: Array<Callout>}> = ({ callouts }) => {
 }
 
 
-export const getServerSideProps: GetServerSideProps = async () => {
+export const getStaticProps: GetStaticProps = async () => {
   const apiCallouts: Array<ApiCallout> = await (fetch(apiUrl)).then(res => res.json());
   return {
     props: {
